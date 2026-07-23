@@ -1,3 +1,4 @@
+"use client";
 import Nav from "@/components/Nav";
 import BackHome from "@/components/BackHome";
 import BackToTop from "@/components/BackToTop";
