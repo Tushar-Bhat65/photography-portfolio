@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import HomeFeed from "@/components/HomeFeed";
-import BackToTop from "@/components/BackToTop";
+import FloatingActions from "@/components/FloatingActions";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <HomeFeed />
-      <BackToTop />
+      <FloatingActions />
     </main>
   );
 }
