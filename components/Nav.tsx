@@ -18,7 +18,16 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-ink">
-      <div className="flex items-center justify-end px-6 py-5 sm:px-12">
+      <div className="flex items-center justify-between px-6 py-5 sm:px-12">
+        {/* Logo / wordmark */}
+        <Link
+          href="/"
+          onClick={() => setOpen(false)}
+          className="font-display text-xl italic font-light text-paper transition-colors hover:text-brass"
+        >
+          TV
+        </Link>
+
         {/* Desktop nav — unchanged */}
         <nav className="hidden gap-6 sm:flex">
           {links.map((link) => (
