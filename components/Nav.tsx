@@ -23,7 +23,7 @@ export default function Nav() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="-ml-2 font-sans text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:text-brass"
+          className="font-sans text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:text-brass"
         >
           TV
         </Link>
@@ -34,7 +34,7 @@ export default function Nav() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-sans text-xs uppercase tracking-[0.15em] text-paper/70 transition-colors hover:text-brass"
+              className="font-sans text-xs uppercase tracking-[0.15em] text-brass/80 transition-colors hover:text-brass"
             >
               {link.label}
             </Link>
@@ -77,7 +77,7 @@ export default function Nav() {
             key={link.href}
             href={link.href}
             onClick={() => setOpen(false)}
-            className="border-b border-paper/10 py-4 font-sans text-xs uppercase tracking-[0.15em] text-paper/70 transition-colors hover:text-brass"
+            className="border-b border-paper/10 py-4 font-sans text-xs uppercase tracking-[0.15em] text-brass/80 transition-colors hover:text-brass"
           >
             {link.label}
           </Link>
