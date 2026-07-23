@@ -1,0 +1,7 @@
+import CategoryPage from "@/components/CategoryPage";
+import { sections } from "@/data/feed";
+
+export default function VideographyPage() {
+  const section = sections.find((s) => s.id === "videography")!;
+  return <CategoryPage label={section.label} items={section.items} />;
+}
