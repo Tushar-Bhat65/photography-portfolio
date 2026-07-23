@@ -23,7 +23,7 @@ export default function Nav() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="-ml-4 font-sans text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:text-brass"
+          className="-ml-2 font-sans text-sm font-bold uppercase tracking-[0.2em] text-paper transition-colors hover:text-brass"
         >
           TV
         </Link>
