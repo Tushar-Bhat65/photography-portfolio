@@ -23,7 +23,7 @@ export default function Nav() {
         <Link
           href="/"
           onClick={() => setOpen(false)}
-          className="font-display text-xl italic font-light text-paper transition-colors hover:text-brass"
+          className="border border-paper/40 px-3 py-1.5 font-sans text-xs font-medium uppercase tracking-[0.2em] text-paper transition-colors hover:border-brass hover:text-brass"
         >
           TV
         </Link>
