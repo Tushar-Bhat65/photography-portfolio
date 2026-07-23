@@ -25,8 +25,8 @@ export const about = {
     "Handled college's official social media accounts for 2 years",
   ],
   photos: [
-    { id: "a1", image: "/images/me/me1.JPEG", alt: "Shooting an event", caption: "Shooting an event" },
-    { id: "a2", image: "/images/me/me2.JPEG", alt: "Accepting Club Lead Honors", caption: "Accepting Club Lead Honors" },
-    { id: "a3", image: "/images/me/me3.jpg", alt: "Best college photographer award", caption: "Best college photographer award" },
+    { id: "a1", image: "/images/me/me1.JPEG", alt: "Event photographer covering a live event in India", caption: "Shooting an event" },
+    { id: "a2", image: "/images/me/me2.JPEG", alt: "Photographer accepting college media club lead honors", caption: "Accepting Club Lead Honors" },
+    { id: "a3", image: "/images/me/me3.jpg", alt: "Photographer receiving best college photographer award", caption: "Best college photographer award" },
   ],
 };
