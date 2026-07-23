@@ -9,6 +9,15 @@ import Lightbox from "@/components/Lightbox";
 export default function HomeFeed() {
   const [openSectionId, setOpenSectionId] = useState<string | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 639px)");
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
 
   const activeSection = sections.find((s) => s.id === openSectionId) ?? null;
   const activeItems = activeSection?.items ?? [];
@@ -168,17 +177,24 @@ export default function HomeFeed() {
                 isLandscape ? "landscape" : "portrait"
               );
 
-              const style: React.CSSProperties = {
-                width: layout.width,
+              const style: React.CSSProperties = isMobile
+                ? {
+                    width: "100%",
+                    marginLeft: 0,
+                    marginRight: 0,
+                    marginBottom: "48px",
+                  }
+                : {
+                    width: layout.width,
 
-                marginBottom:
-                  section.id === "events" && i === 4
-                    ? "40px"
-                    : layout.verticalGap,
+                    marginBottom:
+                      section.id === "events" && i === 4
+                        ? "40px"
+                        : layout.verticalGap,
 
-                marginLeft: isLeft ? layout.leftOffset : "auto",
-                marginRight: isLeft ? "auto" : layout.rightOffset,
-              };
+                    marginLeft: isLeft ? layout.leftOffset : "auto",
+                    marginRight: isLeft ? "auto" : layout.rightOffset,
+                  };
 
               return (
                 <motion.div
